@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Petit jeux</title>
+        <script src="/script.js"></script>
+        <link rel= "stylesheet" href = "style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        
+      <div class="container" >
+
+         <div class= "boxClass" id="title">
+            <h1>Guess the number</h1>
+         </div>
+
+         <div class="boxClass">
+            <div id="midContent">
+                <p class="explication">
+            Try to find the hiden number, at most 10.000 (i.e. the number is less or equal to 10.000).<br>
+                </p>
+            <p class="exemple" id="sample" text-align="left">
+                 <i>Exemple:</i><br><br>
+                 For HiddenNum : <span class="void">_________ </span>1947<br>
+                 If input is : <span class="void">___________ </span>6944<br>
+                 Output should be: <span class="void">_______ </span>
+
+                        <span class= "True">OO</span><span class= "halfTrue">O</span><span class= "False">O</span>
+                        <br><br>
+
+                 correct (2)<span class= "void">______________</span>: -94-<br>
+                 unexpected position (1)<span class= "void">__</span>: ---4<br>
+                 false (1) <span class = "void">_______________</span>: 6---<br>
+            </p>
+            </div>
+            <p class="explication">
+            Now play, it will be more ceaver for you. You have 15 chance of good luck.<br>
+                </p>
+        </div>
+    <div class="boxClass" id="explication">
+        <p class = "exemple" id = "demo"></p>
+        
+            <p class= "exemple">
+            <!-- <div class="floating-box" id="fBox"></div> -->        
+            <input type = "input" id ="enteredWord">
+ 	        <button id = "btnValidate" onclick = "monScript()" type = "submit">Validate(15)</button>
+            </p>
+        </div>
+
+    </div>
+        
+    </body>
+</html>
