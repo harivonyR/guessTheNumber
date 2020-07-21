@@ -3,8 +3,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>A tiny game</title>
-        <script src="/script.js"></script>
+        <title>Welcome !</title>
+        <script src="script.js"></script>
         <link rel= "stylesheet" href = "style.css">
         <script src="script.js"></script>
     </head>
@@ -12,44 +12,47 @@
 
         
       <div class="container" >
-
          <div class= "boxClass" id="title">
-            <h1>Guess the number</h1>
+            <p>
+                <h1>GUESS THE NUMBER</h1>
+                <hr color="grey">
+                <span class="void">Test your logical and deduction skills.</span>
+            </p>
          </div>
 
          <div class="boxClass">
             <div id="midContent">
                 <p class="explication">
-            Try to find the hiden number, at most 10.000 (i.e. the number is less or equal to 10.000).<br>
+                <span class= "void">__</span>Try to find the hidden number, at the most  10.000 (the number is less or equal to 10.000).<br>
                 </p>
-            <p class="exemple" id="sample" text-align="left">
-                 <i>Exemple:</i><br><br>
-                 For HiddenNum : <span class="void">_________ </span>1947<br>
-                 If input is : <span class="void">___________ </span>6944<br>
-                 Output should be: <span class="void">_______ </span>
+                <p class="exemple" id="sample" text-align="left">
+                 <i><ins>Example:</ins></i><br><br>
+                 For HiddenNum : <span class="void">________ </span>1947<br>
+                 If your answer is : <span class="void">____ </span>6944<br>
+                 Output should be: <span class="void">______ </span>
 
-                        <span class= "True">OO</span><span class= "halfTrue">O</span><span class= "False">O</span>
+                        <span class= "True">**</span><span class= "halfTrue">*</span><span class= "False">*</span>
                         <br><br>
 
-                 correct (2)<span class= "void">______________</span>: -94-<br>
-                 unexpected position (1)<span class= "void">__</span>: ---4<br>
-                 false (1) <span class = "void">_______________</span>: 6---<br>
-            </p>
+                 <span class= "True">**</span>correct (2) <span class= "void">__________</span> -94-<br>
+                 <span class= "halfTrue">*</span> incorrect position (1) <span class= "void"></span>---4<br>
+                 <span class= "False">*</span> false (1) <span class = "void">____________</span> 6---<br>
+                </p>
             </div>
             <p class="explication">
-            Now play, it will be more cleaver for you. You have 15 chance to find it. Good luck.<br>
-                </p>
-        </div>
-    <div class="boxClass" id="explication">
-        <p class = "exemple" id = "demo"></p>
-        
-            <p class= "exemple">
-            <!-- <div class="floating-box" id="fBox"></div> -->        
-            <input type = "input" id ="enteredWord">
- 	        <button id = "btnValidate" onclick = "monScript()" type = "submit">Validate(15)</button>
+            <span class= "void">__</span>Now try ! Don't worry if you don't understand. You have 15 chances to find it, good luck.<br>
             </p>
         </div>
-
+        <div class="boxClass" id="explication">
+            <p class = "exemple" id = "demo"></p>
+        
+                <p class= "exemple">
+            <!-- <div class="floating-box" id="fBox"></div> -->
+                <input class="input" type="input" id ="enteredWord">
+ 	            <button class="btn" id = "btnValidate" onclick = "mainScript()" type = "submit">Submit (15)</button>
+                <input class="btn" id="replay" type="button" value="Replay" onClick="reload();">
+            </p>
+        </div>                                                                     
     </div>
         
     </body>
