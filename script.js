@@ -1,28 +1,40 @@
+var True = "*"; True = True.fontcolor ("#3df544"); //green
+var halfTrue = "*"; halfTrue = halfTrue.fontcolor("#ffff00"); //orange
+var False = "*"; False = False.fontcolor ("#ff3333");//red
 
-const	target = (Math.floor(Math.random()*10000)).toString();
-const   lengthInputMax = target.length;
+
+var	target = (Math.round(Math.random()*10000)).toString();
+var lengthInputMax = target.length;
+var attempt = 15;
+var enteredWord;
 var result = [0,0,0];
-var k=15;
+var k = attempt;
 
-var True = "0"; True = True.fontcolor ("#3df544"); //green
-var halfTrue = "0"; halfTrue = halfTrue.fontcolor("#ffff00"); //orange
-var False = "0"; False = False.fontcolor ("#ff3333");//red
+document.getElementById("btnValidate").innerHTML = k.toString();
+
+function reload (statute){
+	if (statute=="win") alert("Well played, the number is: "+target);
+	else alert("No luck, the number was "+target);
+	document.getElementById("demo").innerHTML = "";
+	target = (Math.floor(Math.random()*10000)).toString();
+	lengthInputMax = target.length;
+	k=attempt;
+	document.getElementById("btnValidate").innerHTML = "Submit (15)";
+}
 
 
-
-function monScript()
+function mainScript()
 {
 
 	k-=1;   	
-	document.getElementById("btnValidate").innerHTML = "Validate ("+k+")";
+	document.getElementById("btnValidate").innerHTML = "Submit ("+k+")";
 //ocument.getElementById("fBox").innerHTML = 15;
-	
 	tmp = document.getElementById("enteredWord").value;
 	tmp = tmp.toString();
 	
-   	var spacingTmp = "_";
 
-	var spacingSize = 15 - tmp.length;
+   	var spacingTmp = "_";
+	var spacingSize = 25 - tmp.length;
 	var i = 0;
 	while (i<spacingSize){
 		spacingTmp += "_";
@@ -75,15 +87,18 @@ function monScript()
 
 	
  	
-	var wordEntered = document.getElementById("enteredWord").value+spacingTmp+" "+resultMoji.join(" ")+"<br>";
+	wordEntered = document.getElementById("enteredWord").value+spacingTmp+" "+resultMoji.join(" ")+"<br>";
 	document.getElementById("demo").innerHTML += wordEntered;
 	
-  	if (tmp==target) document.getElementById("demo").innerHTML += "Congratulation<br>";
+  	if (tmp==target){
+  		document.getElementById("demo").innerHTML += "Congratulation<br>";
+  		reload("win");
+  	}
+
   	else if (k<=0){
-  		alert("The number was "+target);	
+  		reload("loose");
   	} 
 	result = [0,0,0];
 	}
-
-
+	document.getElementById("enteredWord").value="";
 }
