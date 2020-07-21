@@ -10,7 +10,6 @@ var enteredWord;
 var result = [0,0,0];
 var k = attempt;
 
-document.getElementById("btnValidate").innerHTML = k.toString();
 
 function reload (statute){
 	if (statute=="win") alert("Well played, the number is: "+target);
