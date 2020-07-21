@@ -1,61 +1,53 @@
-    body{
-    font-family : sans-serif;
-    background : #1f1f2e;
-    }
+body{
+font-family : Arial;
+background : #1f1f2e;
+}
 
-    .container{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    max-width: 600px;
-    padding: 5px;
-    }
+.container{
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+max-width: 500px;
+padding: 5px;
+}
 
-    .boxClass{
-    background-color: #4e4e4b;
-    color: #3df544;
+.boxClass{
+background-color: #3b404b ;
+color: #3df544;
+max-width: 600px; 
+margin-top: 20px;
+padding:20px;
+border: solid 3px #41413e; 
+border-radius : 7px;
+box-shadow: -1px -0.5px 50px -20px black;
+transition: 0.3s;
+}
 
-    max-width: 600px; 
-    margin-top: 20px;
-    padding:20px;
-    border: solid 3px #41413e; 
-    border-radius : 2px;
+#title{
+color : #ff7c4d;
+text-shadow: -1px 0.5px  black;
+text-align: center;
+padding-top: 1px;
+padding-bottom: 0px;
+}
 
-    box-shadow: -1px -0.5px 7px 0px rgba(255,89,89,1);
-    }
+.exemple{
+padding-left: 10%;
+}    
 
-    #title{
-    color : #ff7c4d;
-    text-shadow: -1px 0.5px  black;
-    text-align: center;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    }
+#sample{
+font-family:courier;
+}
 
-    .exemple{
-        padding-left: 10%;
+.explication{
+letter-spacing: 1px;
+color: #ff7c4d;
+text-shadow: -1px 1px 3px black;
+}
 
-
-    }    
-
-    #sample{
-        font-family:courier;
-    }
-
-    .explication{
-        letter-spacing: 1px;
-        color: #ff7c4d;
-        text-shadow: -1px 1px 3px black;
-    }
-  
-    .floating-box {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin: 2px;
-    border: 3px solid #73AD21;  
-    text-align: center;
-    }
+#demo{
+text-shadow: -1px 1px 15px black;
+}
     
     .True{
         color : #3df544;
@@ -70,3 +62,42 @@
     .void {
         color : grey;
     }
+
+.input {
+background-color: #ddd;
+width: 40%;
+border: none;
+color: black;
+padding: 5px;
+margin: 3px 3px;
+}
+
+.btn {
+background-color: #dsdd;
+border: none;
+color: black;
+text-align: center;
+padding: 5px;
+padding-left: 8px;
+padding-right: 8px;
+margin: 2px 2px;
+transition: 0.3s;
+}
+
+#btnValidate:hover {
+background-color: #3e8e41;
+color: white;
+}
+    
+#replay:hover {
+background-color: #b22821;
+color: white;
+}
+  
+.boxClass:hover {
+background-color: #3b404b ;
+border: solid 5px #41413e; 
+box-shadow: -1px -0.5px 50px -30px #a2a2c3;
+}
+
+
