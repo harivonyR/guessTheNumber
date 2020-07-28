@@ -17,4 +17,7 @@ Simple dark designed.
 Completly client side.
 Written in basic html, css and javascript DOM.
 
+## Play here:
+https://tensoreleven.github.io/guessTheNumber/
+
 ***"Make world great with your contribution :)"***
