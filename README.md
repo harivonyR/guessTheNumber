@@ -8,9 +8,7 @@ You have 15 attempts to find the hidden number. The game will show your
 answer truth level for every submition.
 
 ## Supported browsers:
-Chrome    : True
-Firefox   : True
-Explorer  : False
+Chrome/Firefox/Opera
 
 ## Details:
 Simple dark designed.
